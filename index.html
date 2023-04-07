@@ -10,33 +10,19 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <form action="#">
-      <label for="countryName">Country:</label>
-      <input type="text" name="countryName" id="countryName" />
+    <form onsubmit="getWeather(); return false">
       <label for="cityName">City:</label>
       <input type="text" name="cityName" id="cityName" />
+      <button type="submit">Get Weather</button>
     </form>
-    <div class="answer">
-        <div id="temp">
-            <div id="celsius"></div>
-            <div id="frenhiet"></div>
-        </div>
-        <div id="otherInformation"></div>
-    </div>
-    <div class="lastWeek"></div>
-    <div class="nextWeek">
-        <div id="day1"></div>
-        <div id="day2"></div>
-        <div id="day3"></div>
-        <div id="day4"></div>
-        <div id="day5"></div>
-        <div id="day6"></div>
-        <div id="day7"></div>
-    </div>
-    <button onclick="getWeather()">Get Weather</button>
-
+      <span id="temp"></span>
+        <span id="celsius"></span>
+        <span id="frenhiet"></span>
+      <div id="otherInformation"></div>
+  
     <!-- Axious Liburary Which Gives us live Waether Update -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
