@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App || Karan Kumar</title>
+    <link rel="icon" href="./images/icon_sun.png" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <form action="#">
+      <label for="countryName">Country:</label>
+      <input type="text" name="countryName" id="countryName" />
+      <label for="cityName">City:</label>
+      <input type="text" name="cityName" id="cityName" />
+    </form>
+    <div class="answer">
+        <div id="temp">
+            <div id="celsius"></div>
+            <div id="frenhiet"></div>
+        </div>
+        <div id="otherInformation"></div>
+    </div>
+    <div class="lastWeek"></div>
+    <div class="nextWeek">
+        <div id="day1"></div>
+        <div id="day2"></div>
+        <div id="day3"></div>
+        <div id="day4"></div>
+        <div id="day5"></div>
+        <div id="day6"></div>
+        <div id="day7"></div>
+    </div>
+    <button onclick="getWeather()">Get Weather</button>
+
+    <!-- Axious Liburary Which Gives us live Waether Update -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
