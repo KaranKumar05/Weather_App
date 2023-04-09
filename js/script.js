@@ -8,7 +8,7 @@ let minutes = currentDate.getMinutes();
 // Format the date and time string
 const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUNE', 'JULY', 'AUG', 'SEPT', 'OCT', 'NOV', 'DEC'];
 
-let formattedDate = `${date < 10 ? '0' : ''}${date}-${months[month-1]}`;
+let formattedDate = `${date < 10 ? '0' : ''}${date}-${months[month - 1]}`;
 document.querySelector("#date").innerHTML = `<i class="bi bi-calendar3"></i> ${formattedDate}`;
 let ampm = hours >= 12 ? 'PM' : 'AM';
 let formattedTime = `${hours % 12 || 12}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
@@ -30,7 +30,8 @@ window.getWeather = function () {
       console.log(response.data);
       document.querySelector("#name").innerHTML = `Today's Weather of, ${response.data.name} ${response.data.sys["country"]}`;
       document.querySelector("#celsius").innerHTML = `${response.data.main.temp}<span id="cel">°C</span>`;
-      document.querySelector("#frenhiet").innerHTML = `${(response.data.main.temp * 9 / 5) + 32}<span id="cel">°F</span>`;
+      document.querySelector("#frenhiet").innerHTML = `${((response.data.main.temp * 9 / 5) + 32).toFixed(2)}<span id="cel">°F</span>`;
+
       document.querySelector("#humadity").innerHTML = `Humidity ${response.data.main.humidity}%`
       document.querySelector("#feels_like").innerHTML = `Feels Like ${response.data.main.feels_like}<span id="cel">°C</span>`
       document.querySelector("#status").innerHTML = ` ${response.data.weather[0].description}`

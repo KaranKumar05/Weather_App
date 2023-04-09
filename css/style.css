@@ -179,7 +179,7 @@ button:active {
   #name {
     font-size: 1.3em;    
     /* border-bottom: 2px solid white; */
-    width: 27em;
+    width: 26.9em;
   }
   .temp {
     flex-direction: column;
@@ -197,7 +197,7 @@ button:active {
     font-size: large;
   }
   #name {
-    width: 23em;
+    width: 23.07em;
   }
   .temp {
     flex-direction: column;
@@ -207,7 +207,6 @@ button:active {
   .otherInformation {
     flex-direction: column;
     align-items: center;    
-    row-gap: .5em;
     border-radius: 20px;
     font-size: 1.7em;
     width: 15em;
@@ -236,7 +235,7 @@ button:active {
     border-radius: 10px;
   }
   #name {
-    width: 18.5em;
+    width: 18.49em;
   }
   .temp {
     font-size: 4em;
@@ -258,7 +257,7 @@ button:active {
     border-radius: 10px;
   }
   #name {
-    width: 14em;
+    width: 13.87em;
   }
   .temp {
     font-size: 3em;
