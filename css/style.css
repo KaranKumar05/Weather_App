@@ -103,12 +103,12 @@ button:active {
   color: white;
   /* background: linear-gradient(to right, #ff8800, #ff0000); */
   background-color: rgba(0, 0, 0, 0.562);
-  
+
   width: 34.6em;
   /* padding: 5px; */
   margin: auto;
   margin-top: 1em;
-  border-radius:10px 10px  0px 0px ;
+  border-radius: 10px 10px 0px 0px;
 }
 .temp {
   display: flex;
@@ -127,7 +127,6 @@ button:active {
   /* padding: 50px; */
 }
 #celsius {
-
   border-right: 5px solid rgb(255, 255, 255);
   padding: 0px 0.5em 0px 0px;
 }
@@ -141,7 +140,7 @@ button:active {
   display: flex;
   justify-content: center;
   column-gap: 2em;
-  width: 20em;
+  width: 30em;
   border-radius: 10px;
   margin: auto;
   font-weight: bold;
@@ -164,12 +163,18 @@ button:active {
 }
 
 /* Responsive */
-@media (max-width:1024px) {
-  .data{
+@media (max-width: 1024px) {
+  .data {
     flex-direction: column;
   }
+  .otherInformation {
+    column-gap: 1.5em;
+    margin: auto;
+    font-size: 1.7em;
+    margin-top: 2em;
+  }
 }
-@media (max-width:898px) {
+@media (max-width: 898px) {
   .heading > h1 {
     font-size: 2em;
   }
@@ -177,7 +182,7 @@ button:active {
     padding: 0px 15px 0px 0px;
   }
   #name {
-    font-size: 1.3em;    
+    font-size: 1.3em;
     /* border-bottom: 2px solid white; */
     width: 26.9em;
   }
@@ -190,10 +195,16 @@ button:active {
   #celsius {
     border: none;
   }
+  .otherInformation {
+    flex-direction: column;
+    row-gap: 0.5em;
+    width: 14em;
+    text-align: center;
+  }
 }
-@media (max-width:724px) {
-  .data{
-    row-gap: .3em;
+@media (max-width: 724px) {
+  .data {
+    row-gap: 0.3em;
     font-size: large;
   }
   #name {
@@ -206,7 +217,7 @@ button:active {
   }
   .otherInformation {
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     border-radius: 20px;
     font-size: 1.7em;
     width: 15em;
@@ -214,13 +225,13 @@ button:active {
     margin-top: 2em;
   }
 }
-@media (max-width:650px) {
-  .heading{
+@media (max-width: 650px) {
+  .heading {
     display: flex;
     flex-direction: column;
     row-gap: 1em;
   }
-  .data{
+  .data {
     flex-direction: row;
     column-gap: 3em;
   }
@@ -245,7 +256,7 @@ button:active {
     width: 13em;
   }
 }
-@media (max-width:464px) {
+@media (max-width: 464px) {
   form input {
     font-size: 1.5em;
     padding: 3px;
