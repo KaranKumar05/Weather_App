@@ -15,7 +15,7 @@ toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
   if (this.classList.toggle("bi-brightness-high-fill")) {
     header.style.transition = "1.5s";
-    body.style.backgroundImage = "url('../images/bg.jpg')";
+    body.style.backgroundImage = "url(../images/bg.jpg)";
     header.style.color = "black";
     input.style.transition = "1.5s";
     input.style.color = "";
@@ -37,7 +37,7 @@ toggle.addEventListener("click", function () {
     darkModeText.style.transition = "1.5s";
     darkModeText.style.fontWeight = "bold"
   } else {
-    body.style.backgroundImage = "url('../images/dark_bg.jpeg')";
+    body.style.backgroundImage = "url(../images/dark_bg.jpeg)";
     body.style.transition = "1.5s";
     header.style.color = "white";
     input.style.transition = "1.5s";
