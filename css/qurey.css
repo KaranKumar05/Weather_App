@@ -1,0 +1,117 @@
+/* Responsive */
+@media (max-width: 1024px) {
+    .data {
+      flex-direction: column;
+    }
+    .otherInformation {
+      column-gap: 1.5em;
+      margin: auto;
+      font-size: 1.7em;
+      margin-top: 2em;
+    }
+  }
+  @media (max-width: 898px) {
+    .heading > h1 {
+      font-size: 2em;
+    }
+    .heading > h1 > i {
+      padding: 0px 15px 0px 0px;
+    }
+    #name {
+      font-size: 1.3em;
+      /* border-bottom: 2px solid white; */
+      width: 26.9em;
+    }
+    .temp {
+      flex-direction: column;
+      /* row-gap: .2em; */
+      font-size: 5em;
+      width: 7em;
+    }
+    #celsius {
+      border: none;
+    }
+    .otherInformation {
+      flex-direction: column;
+      /* row-gap: 0.5em; */
+      width: 14em;
+      text-align: center;
+    }
+  }
+  @media (max-width: 724px) {
+    .data {
+      row-gap: 0.3em;
+      font-size: large;
+    }
+    #name {
+      width: 23.07em;
+    }
+    .temp {
+      flex-direction: column;
+      /* row-gap: .2em; */
+      width: 6em;
+    }
+    .otherInformation {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+      font-size: 1.7em;
+      width: 15em;
+      margin: auto;
+      margin-top: 2em;
+    }
+  }
+  @media (max-width: 650px) {
+    .heading {
+      display: flex;
+      flex-direction: column;
+      row-gap: .5em;
+    }
+    .data {
+      flex-direction: row;
+      column-gap: 3em;
+    }
+    form input {
+      font-size: 1.8em;
+      padding: 3px;
+      border-radius: 15px;
+    }
+    form > button {
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+    #name {
+      width: 18.49em;
+    }
+    .temp {
+      font-size: 4em;
+    }
+    .otherInformation {
+      font-size: 1.5em;
+      width: 13em;
+    }
+  }
+  @media (max-width: 464px) {
+    form input {
+      font-size: 1.5em;
+      padding: 3px;
+      border-radius: 15px;
+    }
+    form button {
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 10px;
+    }
+    #name {
+      width: 13.87em;
+    }
+    .temp {
+      font-size: 3em;
+      width: 6em;
+    }
+    .otherInformation {
+      font-size: 1.4em;
+      width: 11em;
+    }
+  }

@@ -73,6 +73,7 @@
       margin: 0%;
       padding: 0%;
       font-family: "Arial", Helvetica, sans-serif;
+      background-image: url(../images/bg.jpg);
     }
     i {
       font-size: 150px;
@@ -107,17 +108,38 @@
       toggle.addEventListener("click", function () {
         this.classList.toggle("bi-moon");
         if (this.classList.toggle("bi-brightness-high-fill")) {
-          body.style.background = "white";
-          body.style.color = "black";
+          // body.style.background = "white";
+          body.style.backgroundImage = "url('../images/bg.jpg')";
+          body.style.color = "white";
           body.style.transition = "1.5s";
           darkModeText.textContent = "light";
+          darkModeText.style.fontWeight = "bold"
         } else {
-          body.style.background = "black";
+          body.style.backgroundImage = "url('../images/dark_bg.jpeg')";
           body.style.color = "white";
           body.style.transition = "1.5s";
           darkModeText.textContent = "dark";
+          darkModeText.style.fontWeight = "bold"
         }
       });
+      // const toggle = document.getElementById("toggleDark");
+      // const body = document.querySelector("body");
+      // const darkModeText = document.getElementById("dark-mode-text");
+
+      // toggle.addEventListener("click", function () {
+      //   this.classList.toggle("bi-moon");
+      //   if (this.classList.toggle("bi-brightness-high-fill")) {
+      //     body.style.background = "white";
+      //     body.style.color = "black";
+      //     body.style.transition = "1.5s";
+      //     darkModeText.textContent = "light";
+      //   } else {
+      //     body.style.background = "black";
+      //     body.style.color = "white";
+      //     body.style.transition = "1.5s";
+      //     darkModeText.textContent = "dark";
+      //   }
+      // });
     </script>
   </body>
 </html>
