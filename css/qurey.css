@@ -93,6 +93,13 @@
     }
   }
   @media (max-width: 464px) {
+    .heading > h1 {
+      font-size: 1.7em;
+    }
+    .data {
+      flex-direction: row;
+      column-gap: 2em;
+    }
     form input {
       font-size: 1.5em;
       padding: 3px;
