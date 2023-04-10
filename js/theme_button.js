@@ -11,6 +11,15 @@ const head = document.querySelector("#name");
 const temp = document.querySelector(".temp");
 const otherInfo = document.querySelector(".otherInformation")
 
+const row = document.querySelector("#row");
+
+const column = document.querySelector("#column");
+const twitter= document.querySelector("#twitter");
+const linkedin= document.querySelector("#linkedin");
+const github= document.querySelector("#github");
+const whatsapp= document.querySelector("#whatsapp");
+
+
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
   if (this.classList.toggle("bi-brightness-high-fill")) {
@@ -34,8 +43,22 @@ toggle.addEventListener("click", function () {
     otherInfo.style.transition = "1.5s";
     otherInfo.style.color = "black";
     otherInfo.style.backgroundColor = "";
+    
+    row.style.transition = "1.5s";
+    row.style.color = "black"
+    column.style.transition = "1.5s";
+    column.style.color = "black";
+    twitter.style.transition = "1.5s";
+    twitter.style.color = "black"
+    github.style.transition = "1.5s";
+    github.style.color = "black";
+    linkedin.style.transition = "1.5s";
+    linkedin.style.color = "black";
+    whatsapp.style.transition = "1.5s";
+    whatsapp.style.color = "black";
     darkModeText.style.transition = "1.5s";
     darkModeText.style.fontWeight = "bold"
+    
   } else {
     body.style.backgroundImage = "url(../images/dark_bg.jpeg)";
     body.style.transition = "1.5s";
@@ -59,7 +82,20 @@ toggle.addEventListener("click", function () {
     otherInfo.style.transition = "1.5s";
     otherInfo.style.color = "white";
     otherInfo.style.backgroundColor = "rgba(0, 0, 0, 0.607)";
+    row.style.transition = "1.5s";
+    row.style.color = "white"
+    column.style.transition = "1.5s";
+    column.style.color = "white"
+    twitter.style.transition = "1.5s";
+    twitter.style.color = "white";
+    github.style.transition = "1.5s";
+    github.style.color = "white";
+    linkedin.style.transition = "1.5s";
+    linkedin.style.color = "white";
+    whatsapp.style.transition = "1.5s";
+    whatsapp.style.color = "white";
     darkModeText.style.transition = "1.5s";
     darkModeText.style.fontWeight = "bold";
+
   }
 });
